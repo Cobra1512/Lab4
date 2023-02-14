@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Changing the font of the text in the body */
+  
+  header {
+    background-color: darkgray;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* styleing header */
+  
+  header .banner {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  nav {
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  /* styling navbar */
+  
+  nav .logo {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  /* setting the image size for the logo and rounding the logo */
+  nav .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav .menu li {
+    margin-right: 20px;
+  }
+  
+  nav .menu a {
+    color: rgb(51, 60, 70);
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  nav .menu a:hover {
+    color: aqua;
+  }
+  
+  nav .menu a.active {
+    background-color: rgb(51, 60, 70);
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  /* addition of active and hover functions to style the navbar */
+  .main_content {
+    padding: 20px;
+  }
+  
+  #main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #task p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  #task img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  #requirements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #requirements li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  /* setting the margins and text-alignment */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 60, 70);
+    color: whitesmoke;
+    padding: 20px;
+  }
+  /* organization of footer in a more appealing fashion thru display function */
+  
+  footer .footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  /* use of em relative value */
+  
+  footer .footer-links {
+    display: flex;
+  }
+  
+  footer .footer-links a {
+    color: whitesmoke;
+    margin-right: 20px;
+  }
+  
+  footer .footer-copyright {
+    font-size: 0.8em;
+    text-align: right;
+  }
+  .categories a,
+  .quick_links a {
+    color: white;
+  }
+  * {
+    list-style-type: none;
+  }
+  @media only screen and (max-width: 768px) {
+    header .banner {
+    font-size: 24px;
+    }
+    nav .menu {
+    flex-direction: column;
+    align-items: center;
+    }
+    nav .menu li {
+    margin-bottom: 10px;
+    }
+    #main-heading {
+    font-size: 24px;
+    }
+    #task p {
+    font-size: 16px;
+    }
+    #requirements li {
+    font-size: 16px;
+    }
+    }
+    /* use of media queries for the responsiveness for the tablet */
+    @media only screen and (max-width: 300px) {
+    header .banner {
+    font-size: 18px;
+    }
+    nav .logo img {
+    width: 50px;
+    height: 50px;
+    }
+    nav .menu a {
+    font-size: 16px;
+    }
+    #main-heading {
+    font-size: 18px;
+    }
+    #task p {
+    font-size: 14px;
+    }
+    #requirements li {
+    font-size: 14px;
+    }
+    footer .footer-links a {
+    font-size: 14px;
+    }
+    footer .footer-copyright {
+    font-size: 12px;
+    }
+    }
+    /* use of media queries for the smallest device, the 300px max-widht was set to make website responsive on the phones */
+    @media only screen and (max-width: 767px) {
+      body {
+        font-size: 14px;
+      }
+    
+      header .banner {
+        font-size: 26px;
+      }
+    
+      nav .menu a {
+        font-size: 16px;
+      }
+    
+      #main-heading {
+        font-size: 26px;
+      }
+    
+      #task p {
+        font-size: 16px;
+      }
+    
+      #requirements li {
+        font-size: 16px;
+      }
+    
+      footer .footer-logo {
+        font-size: 1.2em;
+      }
+    
+      footer .footer-copyright {
+        font-size: 0.7em;
+      }
+    }
+    /* use of media queries to change the font-size for the tablets */
+    @media only screen and (max-width: 300px) {
+      header .banner {
+        font-size: 22px;
+      }
+    
+      nav .menu a {
+        font-size: 14px;
+      }
+    
+      #main-heading {
+        font-size: 22px;
+      }
+    
+      #task p {
+        font-size: 14px;
+      }
+    
+      #requirements li {
+        font-size: 14px;
+      }
+    
+      footer .footer-logo {
+        font-size: 1em;
+      }
+    
+      footer .footer-copyright {
+        font-size: 0.6em;
+      }
+    }
+    /* use of media queries to change the font size for the phones with max-width 300px */
+    @media only screen and (max-width: 767px) {
+      header,
+      nav,
+      .main_content,
+      footer {
+        width: 100%;
+        flex-direction: column;
+      }
+      header .banner,
+      #main-heading {
+        font-size: 24px;
+      }
+      nav .logo img {
+        width: 50px;
+        height: 50px;
+      }
+      nav .menu li,
+      #requirements li {
+        font-size: 16px;
+      }
+      footer .footer-logo {
+        font-size: 1.2em;
+      }
+    }
+    /* media quiery to change the layout for the smaller devices */
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+  
+    .menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .main_content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    article {
+      width: calc(50% - 20px);
+    }
+  }
+  /* media queries to make images responsive for the smaller devices */
+  img {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: rgb(51, 60, 70);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .footer {
+    background-color: rgb(51, 60, 70);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .content {
+    margin: 10px;
+    padding: 10px;
+  }
+  /* making images in the website change the size as the screen gets smaller */
+  
+  
